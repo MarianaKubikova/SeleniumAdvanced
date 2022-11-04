@@ -1,0 +1,10 @@
+tests\ScrollToTest.class
+tests\JavascriptExecutorTest.class
+tests\PrestigeTest.class
+helpers\ExcelReader.class
+tests\ThereAndBackAgainTest.class
+tests\WaitForItTest.class
+tests\WaitForMinionsTest.class
+tests\BlurTest.class
+tests\InceptionTest.class
+tests\PrimeTest.class
