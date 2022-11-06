@@ -12,10 +12,10 @@ public class TestBase {
   public void setUp() {
   }
 
-//  @After
-//  public void tearDown() {
-//    WebDriverSingleton.getWebDriverInstance().quit();
-//  }
+  @After
+  public void tearDown() {
+    WebDriverSingleton.getWebDriverInstance().quit();
+  }
 
   public WebDriver getDriver() {
     return WebDriverSingleton.getWebDriverInstance();

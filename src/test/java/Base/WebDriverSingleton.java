@@ -1,8 +1,13 @@
 package Base;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WebDriverSingleton {
 
@@ -26,4 +31,14 @@ public class WebDriverSingleton {
     driver = new PhantomJSDriver();
 
   }
+//  private static void initializeSeleniumServer(){
+//    URL url = null;
+//    try {
+//      url = new URL("http://localhost:4444/wd/hub");
+//    } catch (MalformedURLException e) {
+//      e.printStackTrace();
+//    }
+//    DesiredCapabilities desiredCapabilities = DesiredCapabilities.firefox();
+//    driver = new RemoteWebDriver(url, desiredCapabilities);
+//  }
 }

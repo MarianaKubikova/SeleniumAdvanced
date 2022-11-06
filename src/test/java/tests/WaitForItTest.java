@@ -34,6 +34,7 @@ public class WaitForItTest extends TestBase {
   }
 
   @Test
+  @Category(RegressionTest.class)
   public void waitForClass() {
     getDriver().get(BASE_URL + "waitforit.php");
     getDriver().findElement(By.id("startWaitForProperty")).click();
@@ -49,7 +50,7 @@ public class WaitForItTest extends TestBase {
     getDriver().get(BASE_URL + "waitforit.php");
     expectedException.expect(ComparisonFailure.class);
 
-    Assert.assertEquals("WAIT FOR IT !!", getDriver().findElement(By.xpath("//h1")).getText());
+    Assert.assertEquals("WAIT FOR IT !", getDriver().findElement(By.xpath("//h1")).getText());
   }
 
   @Test
